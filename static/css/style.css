@@ -1,0 +1,74 @@
+/* Podstawowe style dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p {
+    margin: 1em 0;
+    padding: 0 10px;
+}
+
+/* Styl dla obrazów i figurek */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em auto;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Rezerwacja maksymalnej wysokości dla placeholderów */
+    object-fit: cover; /* Zachowanie proporcji obrazu */
+    background-color: #eaeaea; /* Tło zastępcze dla placeholdera */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Dodatkowe style dla elementów tekstowych */
+article {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+em {
+    color: #8e44ad;
+}
+
+/* Rezerwacja miejsca dla obrazów, jeśli są niedostępne */
+img[src="image_placeholder.jpg"] {
+    background-color: #e0e0e0;
+    display: block;
+    width: 100%;
+    height: 300px; /* Dokładne miejsce na placeholder */
+    object-fit: none;
+    content: "Placeholder"; /* Zastępczy tekst na wypadek braku obrazu */
+}

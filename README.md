@@ -3,6 +3,10 @@
 Projekt we Flask pobierający treść artykułu i generujący odpowiednio
 sformatowany kod HTML z pomocą OpenAI API.
 
+## Plik wygenerowany przez AI:
+
+[Zobacz plik z artykułem](./files/artykul.html)
+
 ## Instalacja
 
 W wieszu polecenia / terminalu wprowadź poniższe komendy:
@@ -39,7 +43,7 @@ Zamień klucz_api na swój klucz i uruchom polecenie.
 #### Windows:
 
 ```sh
-set API_KEY=klucz_api
+set API_KEY="klucz_api"
 ```
 
 #### Linux: 
